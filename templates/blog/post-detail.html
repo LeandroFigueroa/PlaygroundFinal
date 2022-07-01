@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<div class= "col-sm-12 col-md-6 col-lg-4 col-xl-4">
+<h2 align="center">{{post.title}}</h2>
+ <br>
+
+ <h6> <em>  Escrito por: {{post.author|safe}}<br> {{post.published|date }}  </em>  </h6> 
+         
+ <p> {{post.excerpt|safe}} </p>
+ <br>
+ <p>  {{post.content|safe}}   </p>
+
+</div>  
+
+{% endblock content %}

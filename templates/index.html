@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+ 
+
+{% block title %}  INDEX Principal {% endblock title %}
+    
+{% block content %}
+
+
+<a href= "{% url 'home' %}">
+Home Page
+</a>
+
+<a href= "{% url 'blog:home' %}">
+  BLOG BEBE
+ </a>
+
+{% endblock content %}
